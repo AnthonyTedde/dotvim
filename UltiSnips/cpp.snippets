@@ -8,3 +8,30 @@ class ${1:`!p snip.rv = className(snip.basename) or "name"`}{
 }
 endsnippet
 
+snippet bl "define block"
+#ifndef `!p snip.rv = className(snip.basename)`
+#define `!p snip.rv = className(snip.basename)` 1
+${0:${VISUAL:# assertion}}
+#endif
+endsnippet
+
+snippet ustd "using namespace std"
+using namespace std;
+endsnippet
+
+snippet con "Constructor"
+`!p snip.rv = className(snip.basename)`(${1:someArguments?}){
+	${0}
+}
+endsnippet
+
+snippet c "class name"
+`!p snip.rv = className(snip.basename)`::${0:${VISUAL:#methodName}}
+endsnippet
+
+
+snippet cc "implement constructor"
+`!p snip.rv = className(snip.basename)`::`!p snip.rv = className(snip.basename)`(${1:arguments?}){
+	${0}
+}
+endsnippet
