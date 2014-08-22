@@ -43,3 +43,21 @@ endsnippet
 snippet '
 '${1:pattern}'
 endsnippet
+
+snippet giv
+Given(/^${1:regexp}$/) do
+	${2:pendig}
+end
+endsnippet
+
+snippet when
+When(/^${1:regexp}$/) do ${2:|i|}
+	${3:pending}
+end
+endsnippet
+
+snippet then
+Then(/^${1:regexp}$/) do ${2:|i|}
+	${3:pending}
+end
+endsnippet
