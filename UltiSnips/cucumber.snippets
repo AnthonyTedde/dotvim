@@ -1,0 +1,33 @@
+snippet f
+Feature: ${0}
+endsnippet
+
+snippet s
+Scenario: ${1}	
+	Given ${2}	
+	When ${3}
+	Then ${4}
+endsnippet 
+
+snippet so
+Scenario Outline: ${1}	
+	Given ${2}	
+	When ${3}
+	Then ${4}
+endsnippet 
+
+snippet g 
+Given	${1}	
+endsnippet
+
+snippet wr
+When(/^${1:regexp}$/) do ${2:|i|}
+	${3:pending}
+end
+endsnippet
+
+snippet tr
+Then(/^${1:regexp}$/) do ${2:|i|}
+	${3:pending}
+end
+endsnippet
