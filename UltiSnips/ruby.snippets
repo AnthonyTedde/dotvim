@@ -50,3 +50,44 @@ Given(/^${1:regexp}$/) do
 end
 endsnippet
 
+#####################################################
+#			For cucumber							#
+#####################################################
+
+##
+# Given, When, Then with regular expression formating
+##
+
+snippet gr
+Given /^${1:regexp}$/ do |input|
+	${3:pending}
+end
+endsnippet
+
+snippet wr
+When(/^${1:regexp}$/) do ${2:|i|}
+	${3:pending}
+end
+endsnippet
+
+snippet tr
+Then(/^${1:regexp}$/) do ${2:|i|}
+	${3:pending}
+end
+endsnippet
+
+##
+# Given, When and Then only
+##
+
+snippet w 
+When ${1}	
+endsnippet
+
+snippet g 
+Given ${1}	
+endsnippet
+
+snippet t 
+Then ${1}	
+endsnippet

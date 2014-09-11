@@ -130,4 +130,5 @@ nmap <leader>x ggVGx
 nmap <leader>p "+p
 nmap <leader><S-p> "+P
 nmap <leader>y "+y
-
+" ctrlp
+nmap <leader>c :CtrlP<CR>
