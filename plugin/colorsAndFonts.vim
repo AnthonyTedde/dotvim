@@ -2,7 +2,7 @@
 " Apparence, colors and Fonts
 ""
 colorscheme solarized
-set background=dark
+set background=light
 set guifont=Consolas:h12
 ""
 " Delete toolbar (T)

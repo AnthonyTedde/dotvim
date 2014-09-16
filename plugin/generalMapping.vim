@@ -132,3 +132,8 @@ nmap <leader><S-p> "+P
 nmap <leader>y "+y
 " ctrlp
 nmap <leader>c :CtrlP<CR>
+
+""
+" Text manipulation
+""
+ca stw call StripTrailingWhitespaces()
