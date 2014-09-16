@@ -55,5 +55,6 @@ set softtabstop=4
 if has("autocmd")
     "filetype must be on. see .vimrc
     autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+    autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab 
 endif
 
