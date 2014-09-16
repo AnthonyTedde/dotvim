@@ -12,15 +12,15 @@ if has("gui_running")
     set guioptions-=T
     set guioptions+=e
     set guitablabel=%M\ %t
-    g:solarized_termcolors=   256 
+    let g:solarized_termcolors=   256 
 endif
 ""
 " solarized options
 ""
-g:solarized_termcolors=   16      
-g:solarized_italic    =   0
-g:solarized_contrast  =   "high"
-g:solarized_visibility=   "high"
+let g:solarized_termcolors=   16      
+let g:solarized_italic    =   0
+let g:solarized_contrast  =   "high"
+let g:solarized_visibility=   "high"
 
 ""
 " configure character when set list is activated
@@ -43,3 +43,17 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
+
+""
+" custom behavior depending on the filetype.
+" check filetype:
+" :set ft ?
+" :set filetype?
+" update filetype:
+" setfiletype <filetype>
+""
+if has("autocmd")
+    "filetype must be on. see .vimrc
+    autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+endif
+
