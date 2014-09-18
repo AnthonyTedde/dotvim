@@ -1,14 +1,15 @@
 ""
 " Apparence, colors and Fonts
 ""
-colorscheme solarized
-set background=light
+colorscheme pablo
 set guifont=Consolas:h12
 ""
 " Delete toolbar (T)
 " (e) for using guitablabel and change text  in the labels
 "" 
 if has("gui_running")
+    colorscheme solarized
+    set background=light
     set guioptions-=T
     set guioptions+=e
     set guitablabel=%M\ %t
