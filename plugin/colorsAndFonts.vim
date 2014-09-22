@@ -6,19 +6,19 @@ set guifont=Consolas:h12
 ""
 " Delete toolbar (T)
 " (e) for using guitablabel and change text  in the labels
-"" 
+""
 if has("gui_running")
     colorscheme solarized
     set background=light
     set guioptions-=T
     set guioptions+=e
     set guitablabel=%M\ %t
-    let g:solarized_termcolors=   256 
+    let g:solarized_termcolors=   256
 endif
 ""
 " solarized options
 ""
-let g:solarized_termcolors=   16      
+let g:solarized_termcolors=   16
 let g:solarized_italic    =   0
 let g:solarized_contrast  =   "high"
 let g:solarized_visibility=   "high"
@@ -39,8 +39,8 @@ set listchars=tab:▸\ ,eol:¬
 " default configuration:
 " set ts=8 sts=0 sw=8 noexpandtab
 ""
-set expandtab 
-set smarttab 
+set expandtab
+set smarttab
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
@@ -56,6 +56,6 @@ set softtabstop=4
 if has("autocmd")
     "filetype must be on. see .vimrc
     autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
-    autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab 
+    autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
 endif
 

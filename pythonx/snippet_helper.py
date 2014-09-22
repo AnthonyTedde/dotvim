@@ -6,7 +6,6 @@ to:
 SomethingLikeThis
 '''
 def className(fileName):
-    #str = ''.join(capwords(fileName,"_").split("_"))
-    str = "anthony"
+    str = ''.join(capwords(fileName,"_").split("_"))
     return str
 

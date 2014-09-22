@@ -1,9 +1,34 @@
+#################################################################
+#
+# DESCRIPTION:	ruby and rails snippet.
+#
+# TODO: 
+#
+#################################################################
+
+##
+# Python import functions
+##
 global !p
 from snippet_helper import className
 endglobal
 
+##
+# class
+# classname name construct with file_name becoming FileName
+# see .vim/pythonx/snippet_helper.py
+##
+
+# simple class
 snippet cl "class ... end"
-class ${1:`!p snip.rv = className(snip.basename)`} ${2:inheritance}
+class ${1:`!p snip.rv = className(snip.basename)`}
+	${0}
+end
+endsnippet
+
+# class with inheritance
+snippet clin "class < Inheritance ... end"
+class ${1:`!p snip.rv = className(snip.basename)`} < ${2:inheritance}
   ${0}
 end
 endsnippet
@@ -80,14 +105,14 @@ endsnippet
 # Given, When and Then only
 ##
 
-snippet w 
-When ${1}	
+snippet w
+When ${1}
 endsnippet
 
-snippet g 
-Given ${1}	
+snippet g
+Given ${1}
 endsnippet
 
-snippet t 
-Then ${1}	
+snippet t
+Then ${1}
 endsnippet
