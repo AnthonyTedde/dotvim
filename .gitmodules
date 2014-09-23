@@ -31,3 +31,6 @@
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
+[submodule "bundle/R-plugin"]
+	path = bundle/R-plugin
+	url = https://github.com/vim-scripts/Vim-R-plugin.git
