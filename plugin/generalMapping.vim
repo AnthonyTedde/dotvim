@@ -120,3 +120,4 @@ imap ² <Esc>
 ca tn tabnew
 ca tt NERDTreeToggle .
 ca stw call StripTrailingWhitespaces()
+

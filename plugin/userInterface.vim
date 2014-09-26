@@ -17,7 +17,10 @@ set ruler
 ""
 set cmdheight=2
 ""
-"http://usevim.com/2012/10/19/vim101-set-hidden/
+" set hid == set hidden
+" when several files are loaded into buffer this option
+" leave bn(buffernext) bp(bufferPreviou) alone if some files
+" have been updated without beeing saved before
 ""
 set hid
 ""
