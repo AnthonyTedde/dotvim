@@ -4,6 +4,11 @@
 #
 # TODO: 
 #
+#	-	Cucumber
+#	-	Gemfile
+#	-	ERB
+#	-	Foreigner
+#
 #################################################################
 
 ##
@@ -140,7 +145,39 @@ snippet bootstrap "Bootstrap"
 gem 'bootstrap-sass', '3.2.0'
 endsnippet
 
+snippet rspec "rspec"
+gem 'rspec-rails'
+endsnippet
+
 #################################################################
 # erb
 #################################################################
-snippet = "<%= ... %>
+
+snippet = "<%= ... %>"
+<%= ${1} %>
+endsnippet
+
+#################################################################
+# Foreigner
+#################################################################
+
+snippet addfk "add foreign key"
+add_foreign_key
+	${1:fromTable},
+	${2:toTable},
+	${3:options}
+endsnippet
+
+snippet remfk "remove foreign key"
+remove_foreign_key
+	${1:fromTable},
+	${2:toTable},
+	${3:options}
+endsnippet
+
+#################################################################
+#  
+#################################################################
+
+
+
