@@ -61,8 +61,10 @@ set number
 ""
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsListSnippets="<C-tab>"
+let g:UltiSnipsJumpForwardTrigger="<C-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
@@ -70,3 +72,23 @@ let g:UltiSnipsEditSplit="vertical"
 " customize Ctrlp
 ""
 let g:ctrlp_working_path_mode = 'ra'
+
+""
+" neocomplete
+""
+let g:acp_enableAtStartup = 0
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_cas = 1
+let g:neocomplete#sources#dictionary#dictionaries = {
+    \ 'ruby' : $HOME.'/.ruby_complete'
+    \} 
+set t_Co=256
+
+""
+" R Plugin
+""
+let vimrplugin_routnotab=1
+""
+" emmet
+""
+let g:user_emmet_leader_key='<c-y>'
