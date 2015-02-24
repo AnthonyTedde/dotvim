@@ -45,3 +45,6 @@ rm -rf .git/modules/bundle/sub
 git commit -m "Removed submodule <name>
 ```
 
+## Reference
+
+Thanks to [stackoverflow](http://stackoverflow.com/questions/1260748/how-do-i-remove-a-git-submodule) for all the stuff about removing a git submodule.
