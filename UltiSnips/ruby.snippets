@@ -18,9 +18,13 @@ global !p
 from snippet_helper import className
 endglobal
 
+#################################################################
+# Misc
+#################################################################
+
 ##
 # class
-# classname name construct with file_name becoming FileName
+# classname name must be constructed with file_name becoming FileName
 # see .vim/pythonx/snippet_helper.py
 ##
 
@@ -38,16 +42,6 @@ class ${1:`!p snip.rv = className(snip.basename)`} < ${2:inheritance}
 end
 endsnippet
 
-snippet test "test"
-test '${1:sampleTest}' do
-  ${0}
-end
-endsnippet
-
-snippet ae "assert_equal"
-assert_equal '${1:expected}', ${2:actual}
-endsnippet
-
 snippet mod "module"
 module `!p snip.rv = className(os.path.basename(os.path.realpath('.')))`
   class ${1:`!p snip.rv = className(snip.basename)`} ${2:inheritance}
@@ -62,21 +56,38 @@ def self.${1:methodName}(${2:Attibutes})
 end
 endsnippet
 
-snippet accessor
-attr_accessor(${1:accessors})${0}
+snippet '
+'${1:pattern}'
 endsnippet
 
 snippet auto
 autoload :${1:ClassName}, '`!p snip.rv = os.path.basename(os.path.realpath('.'))`/${2:file_name}'
 endsnippet
 
-snippet '
-'${1:pattern}'
-endsnippet
-
 snippet giv
 Given(/^${1:regexp}$/) do
 	${2:pendig}
+end
+endsnippet
+
+#################################################################
+# Rspec
+#################################################################
+
+snippet ae "assert_equal"
+assert_equal '${1:expected}', ${2:actual}
+endsnippet
+
+snippet accessor
+attr_accessor(${1:accessors})${0}
+endsnippet
+
+#################################################################
+# Simple test
+#################################################################
+snippet test "test"
+test '${1:sampleTest}' do
+  ${0}
 end
 endsnippet
 
@@ -88,19 +99,19 @@ endsnippet
 # Given, When, Then with regular expression formating
 ##
 
-snippet gr
+snippet givenr 
 Given /^${1:regexp}$/ do |input|
 	${3:pending}
 end
 endsnippet
 
-snippet wr
+snippet whenr
 When(/^${1:regexp}$/) do ${2:|i|}
 	${3:pending}
 end
 endsnippet
 
-snippet tr
+snippet thenr
 Then(/^${1:regexp}$/) do ${2:|i|}
 	${3:pending}
 end
@@ -110,15 +121,15 @@ endsnippet
 # Given, When and Then only
 ##
 
-snippet w
+snippet when
 When ${1}
 endsnippet
 
-snippet g
+snippet given
 Given ${1}
 endsnippet
 
-snippet t
+snippet then
 Then ${1}
 endsnippet
 
@@ -147,14 +158,6 @@ endsnippet
 
 snippet rspec "rspec"
 gem 'rspec-rails'
-endsnippet
-
-#################################################################
-# erb
-#################################################################
-
-snippet = "<%= ... %>"
-<%= ${1} %>
 endsnippet
 
 #################################################################

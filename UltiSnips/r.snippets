@@ -1,10 +1,51 @@
-snippet cm
-#####################################
-# ${1:comment}#
-#####################################
+#################################################################
+#
+# DESCRIPTION: 
+#	# Database
+#		# Connection
+#		# Data manipulation
+#
+# TODO: # sort
+#
+#################################################################
+
+#
+# Database
+#
+
+# Connection
+
+snippet mydb "Database connection"
+$2 <- dbConnect(MySQL(),
+				user = "${1:userName}",
+				host = "${2:hostName}",
+				db = "${3:databaseName}")
 endsnippet
 
-snippet m
+
+snippet my "Databases server connection"
+$2 <- dbConnect(MySQL(),
+				user = "${1:userName}",
+				host = "${2:hostName}")
+endsnippet
+
+# Data manipulation
+
+snippet allTables "Get all tables"
+allTables <- dbListTables(${1:dbConnectionName})${0}
+endsnippet
+
+snippet getfields "Get all fields from a database"
+${1:variableName} <- dbListFields(${1:dbConnectionName},
+								"${2:tableName}")${0}
+endsnippet
+
+
+# sort
+snippet cm
+##
+# ${1:comment}
+##
 matrix(${1})
 endsnippet
 

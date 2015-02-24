@@ -1,0 +1,129 @@
+#################################################################
+#
+# DESCRIPTION: Python's shortcuts snippet
+#	# Import
+#	# Class stuf
+#		# Class
+#		# Misc
+#	# Qt's Methods
+#		# Qt misc
+#		# layout
+#		# Qt's Class construction
+#
+# TODO: 
+#
+#################################################################
+##
+# Import
+##
+
+snippet iqcore "PyQt4.QtCore"
+from PyQt4.QtCore import *
+endsnippet
+
+snippet iqgui "PyQt4.QtGui"
+from PyQt4.QtGui import *
+endsnippet
+
+snippet isys
+import sys
+endsnippet
+
+snippet imp "import"
+import
+endsnippet
+
+##
+# Class stuf
+##
+
+# Class
+
+snippet c "Class..."
+class ${1:className}:
+	${0}
+endsnippet
+
+snippet ci "Class...(inheritance)"
+class ${1:className}(${2:inheritance}):
+	${0}
+endsnippet
+
+# Misc
+
+snippet init "__init__"
+def __init__(self):
+	${0}
+endsnippet
+
+##
+# Qt's Methods
+##
+# Qt misc
+
+snippet qapp "QApplication([sys.argv])"
+${1:app} = QApplication(${2:sys.argv})
+endsnippet
+
+snippet qpbut "QPushButton"
+${1:ButtonName} = QPushButton(${2:label})
+endsnippet
+
+snippet qaddwid "addWidget"
+${1:layout}.addWidget(${2:widget})
+endsnippet
+
+snippet qlab "QLabel"
+${1:label} = QLabel(${2:label})
+endsnippet
+
+snippet qline "QLineEdit"
+${1:line} = QLineEdit(${0})
+endsnippet
+
+snippet qsetlay "setLayout"
+${1:self}.setLayout(${2:layout})
+endsnippet
+
+snippet qexe "app.exec_"
+${1:app}.exec_(${0})
+endsnippet
+
+snippet qdial "Qdialog."
+QDialog.${0}
+endsnippet
+
+# End Qt misc
+# Layout
+
+snippet qvbox "QVBoxLayout"
+${1:layout} = QVBoxLayout(${0})
+endsnippet
+
+snippet qhbox "QHBoxLayout"
+${1:layout} = QHBoxLayout(${0})
+endsnippet
+
+snippet qgrid "QGridLayout"
+${1:layout} = QGridLayout(${0})
+endsnippet
+
+# End Layout
+# Handler
+
+
+# End Handler
+# Event
+
+
+# End Event
+# Qt's Class construction
+
+snippet cqdial "class xxx(QDialog)"
+class ${1:ClassName}(QDialog):
+	${0}
+
+${2:dialog} = $1()
+endsnippet 
+
+# end Qt's Class construction

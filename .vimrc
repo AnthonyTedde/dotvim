@@ -62,7 +62,7 @@ set number
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<C-tab>"
-let g:UltiSnipsJumpForwardTrigger="<C-b>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 
@@ -72,17 +72,6 @@ let g:UltiSnipsEditSplit="vertical"
 " customize Ctrlp
 ""
 let g:ctrlp_working_path_mode = 'ra'
-
-""
-" neocomplete
-""
-let g:acp_enableAtStartup = 0
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_smart_cas = 1
-let g:neocomplete#sources#dictionary#dictionaries = {
-    \ 'ruby' : $HOME.'/.ruby_complete'
-    \} 
-set t_Co=256
 
 ""
 " R Plugin

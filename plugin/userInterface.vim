@@ -53,3 +53,5 @@ set novisualbell
 set t_vb=
 "timeout in milisecond
 set tm=500 
+"put a line at 80 character
+set cc=80 "cc = colorcolumn
