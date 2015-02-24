@@ -2,7 +2,7 @@
 " Apparence, colors and Fonts
 ""
 colorscheme pablo
-set guifont=Consolas:h12
+set guifont=Consolas:h10
 ""
 " Delete toolbar (T)
 " (e) for using guitablabel and change text  in the labels
