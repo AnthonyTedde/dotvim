@@ -33,12 +33,12 @@ rm -rf .git/modules/bundle/sub
 
 #### With a git version lower than 1.8.3
 
-first, delete the relevant section inside the __.gitmodules__ file, and run:
+First, delete the relevant section inside the __.gitmodules__ file, and run:
 ```
 git add .gitmodules
 ```
 
-Next, delete the relevant section inside the .git/config file, and perform:
+Next, delete the relevant section inside the __.git/config file__, and perform:
 ```
 git rm --cached bundle/sub
 rm -rf .git/modules/bundle/sub
