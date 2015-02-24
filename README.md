@@ -1,5 +1,15 @@
 # Dotvim
 
+## install
+
+Clone this repo inside the home user folder.
+
+```
+cd ~
+git clone https://github.com/elpapito/dotvim.git .vim
+cp .vim/.vimrc .vimrc
+```
+
 ## Submodules
 
 ### Get
@@ -12,20 +22,23 @@ git submodule update
 ```
 
 ### Delete
+#### With a git version 1.8.3 or higher
 
-To delete a submodule denoted by ```sub``` inside bundle repo with git -v1.8.3 or higher, follow these steps:
+To delete a submodule denoted by __sub__ inside bundle repo with git -v _1.8.3_ or higher, follow these steps:
 ```
 git submodule deinit bundle/sub
 git rm bundle/sub
 rm -rf .git/modules/bundle/sub
 ```
 
-If git -v is lower than 1.8.3:
+#### With a git version lower than 1.8.3
 
-first, delete the relevant section from the ```.gitmodules``` file
-```git add .gitmodules````
+first, delete the relevant section inside the __.gitmodules__ file, and run:
+```
+git add .gitmodules
+```
 
-Next, delete the relevant section from .git/config file
+Next, delete the relevant section inside the .git/config file, and perform:
 ```
 git rm --cached bundle/sub
 rm -rf .git/modules/bundle/sub
