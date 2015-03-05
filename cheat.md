@@ -9,6 +9,7 @@
 | :ls | List file from buffer |
 | :bn | Buffer next |
 | :bp | Buffer previous |
+| :b [_fileName_] | Switch to another file by name |
 
 ### Information from `:ls` command
 
