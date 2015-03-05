@@ -12,7 +12,7 @@
 
 ### Information from `:ls` command
 
-1. **%** Active buffer
+1. **\%** Active buffer
 2. **\#** Alternative buffer
 3. **+** Indicates that buffered file has been modified
 4. **h** _hidden_ mean that the file has ben changed but it is not showed

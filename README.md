@@ -47,7 +47,7 @@ git commit -m "Removed submodule <name>
 
 ## Cheat sheet
 
-Consult [here]()
+Consult [here](https://github.com/elpapito/dotvim/blob/master/cheat.md)
 
 ## Reference
 
