@@ -52,3 +52,5 @@ Consult [here](https://github.com/elpapito/dotvim/blob/master/cheat.md)
 ## Reference
 
 Thanks to [stackoverflow](http://stackoverflow.com/questions/1260748/how-do-i-remove-a-git-submodule) for all the stuff about removing a git submodule.
+
+Thanks to Drew Neil for [vimcasts](http://vimcasts.org/)
