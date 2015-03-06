@@ -8,6 +8,7 @@
 #	-	Gemfile
 #	-	ERB
 #	-	Foreigner
+#	-	Misc
 #
 #################################################################
 
@@ -179,8 +180,21 @@ remove_foreign_key
 endsnippet
 
 #################################################################
-#  
+# Misc  
 #################################################################
 
+snippet /
+/${1:regex}/
+endsnippet
 
+snippet ^
+/^${0}/
+endsnippet
 
+snippet $
+/${0}$/
+endsnippet
+
+snippet ^$
+/^${0}$/
+endsnippet
