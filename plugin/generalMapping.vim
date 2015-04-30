@@ -4,6 +4,7 @@
 ""
 let mapleader = ","
 let g:mapleader = ","
+"let maplocalleader = ","
 
 ""
 " Visual mode pressing * or # searches for the current selection
