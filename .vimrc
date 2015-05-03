@@ -38,11 +38,24 @@ set ai
 set si 
 set wrap 
 ""
-" Always show the status line
+" laststatus=2: Always show the status line
+" To hide stl: Laststatus =0
+"
 " Format the status line
+" %F Absolute path (%f relative)
+" %m [+] if file is modified
+" %r [RO] if readonly
+" %h [Help] if help file is open
+" %w [Preview] When a preview window is open (:help preview-window)
 ""
-set laststatus=2
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+set laststatus =2
+set statusline =<%F%m%r%h%w\>\ 
+set statusline +=[Format=%{&ff}]\ 
+set statusline +=[Type=%y]\ 
+set statusline +=[ASCII=\%03.3b]\ 
+set statusline +=[HEX=\%02.2B]\ 
+set statusline +=[VCol=%02v]\ 
+set statusline +=[%p%%]\ [Len=%L]
 ""
 "By default this option is on and the Vi defaults are used for the options.
 ""
