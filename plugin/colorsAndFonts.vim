@@ -6,12 +6,18 @@ set guifont=Consolas:h10
 ""
 " Delete toolbar (T)
 " (e) for using guitablabel and change text  in the labels
+"
+" guioptions:
+"   * T: Toolbar
+"   * m: Menu
+"   * e: -e to use a non-gui tab line
 ""
 if has("gui_running")
     colorscheme solarized
-    set background=light
+    set background=dark
     set guioptions-=T
-    set guioptions+=e
+    set guioptions-=m
+    set guioptions-=e
     set guitablabel=%M\ %t
     let g:solarized_termcolors=   256
 endif
@@ -59,4 +65,3 @@ if has("autocmd")
     autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
     autocmd FileType r    setlocal ts=2 sts=2 sw=2 expandtab
 endif
-
