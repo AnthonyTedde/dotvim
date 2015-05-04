@@ -30,6 +30,11 @@ let g:solarized_contrast  =   "high"
 let g:solarized_visibility=   "high"
 
 ""
+" Cursor
+""
+set cursorcolumn
+set cursorline
+""
 " configure character when set list is activated
 " <C-v> u00ac   :   ¬
 " <C-v> u25b8   :   ▸
@@ -38,7 +43,7 @@ set listchars=tab:▸\ ,eol:¬
 
 ""
 " Use the appropriate number of spaces to insert a <Tab>.
-" With expandtab, using space instead of tabulation
+" With expand tac, using space instead of tabulation
 " best practice softtabstop == shiftwidth
 " One line configuration:
 " set ts=4 sts=4 sw=8 expandtab
